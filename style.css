@@ -1,0 +1,82 @@
+:root {
+    --background-color-1: #21222A;
+    --background-color-2: #282D35;
+    --react-color: #61DAFB
+}
+* {
+    margin: 0;
+}
+body {
+    background-color: var(--background-color-2);
+}
+#root {
+    font-family: Inter, sans-serif;
+    color: white;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color-1);
+    height: 100px ;
+    box-shadow: 0 0 10px #000;
+ }
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+#logo-text {
+    color: var(--react-color);
+    margin-left: 20px;
+}
+.header img {
+    margin-left: 40px;
+    height: 3em
+}
+.header img:hover {
+    cursor: pointer;
+}
+/*------ NAV -------*/
+.navbar ul {
+    display: flex;
+}
+.navbar li {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 1.5rem;
+    list-style: none;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px 10px
+}
+.navbar li:hover {
+    cursor: pointer;
+    background-color: #434141;
+}
+.container {
+    height: 1000px;
+}
+.container #title {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.container ul {
+    font-size: 23px;
+    margin-left: 40px;
+    margin-top: 20px;
+    line-height: 2;
+}
+.container ul li::marker {
+    color: var(--react-color);
+    font-size: 2rem;
+}
+main {
+    padding: 60px 30px;
+    background-image: url("./src/assets/react-logo-half.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 65%;
+}
